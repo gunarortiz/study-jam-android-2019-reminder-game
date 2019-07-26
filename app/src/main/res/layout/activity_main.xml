@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="Juego de la memoria" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="iniciar"
+            android:text="Iniciar" />
+
+        <Chronometer
+            android:id="@+id/cronometro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="reiniciar"
+            android:enabled="false"
+            android:text="Reiniciar" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/imageButton1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:padding="1dp"
+            android:background="@drawable/fondo"
+            android:layout_margin="5dp"
+            android:onClick="carta"
+            android:textSize="22dp"
+            android:layout_height="120dp" />
+
+        <Button
+            android:id="@+id/imageButton2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:padding="1dp"
+            android:background="@drawable/fondo"
+            android:layout_margin="5dp"
+            android:onClick="carta"
+            android:textSize="22dp"
+            android:layout_height="120dp" />
+
+        <Button
+            android:id="@+id/imageButton3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:padding="1dp"
+            android:background="@drawable/fondo"
+            android:layout_margin="5dp"
+            android:onClick="carta"
+            android:textSize="22dp"
+            android:layout_height="120dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/imageButton4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:padding="1dp"
+            android:background="@drawable/fondo"
+            android:layout_margin="5dp"
+            android:onClick="carta"
+            android:textSize="22dp"
+            android:layout_height="120dp" />
+
+        <Button
+            android:id="@+id/imageButton5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:padding="1dp"
+            android:background="@drawable/fondo"
+            android:layout_margin="5dp"
+            android:onClick="carta"
+            android:textSize="22dp"
+            android:layout_height="120dp" />
+
+        <Button
+            android:id="@+id/imageButton6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:padding="1dp"
+            android:background="@drawable/fondo"
+            android:layout_margin="5dp"
+            android:onClick="carta"
+            android:textSize="22dp"
+            android:layout_height="120dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/imageButton7"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:padding="1dp"
+            android:background="@drawable/fondo"
+            android:layout_margin="5dp"
+            android:onClick="carta"
+            android:textSize="22dp"
+            android:layout_height="120dp" />
+
+        <Button
+            android:id="@+id/imageButton8"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:padding="1dp"
+            android:background="@drawable/fondo"
+            android:layout_margin="5dp"
+            android:onClick="carta"
+            android:textSize="22dp"
+            android:layout_height="120dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:text="" />
+
+
+</LinearLayout>
